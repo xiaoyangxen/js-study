@@ -1,0 +1,102 @@
+1.concat
+	arr1.concat(arr2)
+	返回的是一个新数组
+2.arr.copyWithin(target[, start[, end]])
+	三个参数都必须是整数。target为数组中的索引
+	浅复制这个数组中的一部分到这个数组的另一部分
+	没end则从start到最后
+3.every() 方法测试一个数组内的所有元素是否都能通过某个指定函数的测试。
+	//先写一个测试函数
+	const func = (current)=>{条件，比如：current>40}
+	arr1.every(func)
+	如果数组为空，返回true,如果全部通过大于40则返回true,反之false
+4.fill() 方法用一个固定值填充一个数组中从起始索引到终止索引内的全部元素。不包括终止索引。
+	arr.fill(value[, start[, end]])
+	在这个数组中，用value从start到end填充，不包括end
+	改变原数组
+5.filter
+6.find
+	find() 方法返回数组中满足提供的测试函数的第一个元素的值。否则返回 undefined。
+	找返回第一个满足条件的
+	arr.find(x=>x>10)//返回这个数组里面第一个大于10的值
+7.findIndex
+	findIndex()方法返回数组中满足提供的测试函数的第一个元素的索引。
+	同上面find不过是返回查找到数据的索引
+8.findLast()
+9.findLastIndex()
+10.flat
+	能做到深度索引，flat(2)表示能查到嵌套两层[]
+	const arr1 = [0, 1, 2, [3, 4]];
+
+	console.log(arr1.flat());
+	// expected output: [0, 1, 2, 3, 4]
+
+	const arr2 = [0, 1, 2, [[[3, 4]]]];
+
+	console.log(arr2.flat(2));
+	// expected output: [0, 1, 2, [3, 4]]
+11.flatMap()
+12.forEach()
+13.Array.from() 方法对一个类似数组或可迭代对象创建一个新的，浅拷贝的数组实例。
+14.includes()
+	arr.includes(1),arr数组中是否包含有1，有则返回true
+15.indexOf
+	arr.indexOf(searchElement[, fromIndex])
+	参数1：搜索的值，参数2：从那个索引位置开始查
+16.Array.isArray()
+	判断是否数组
+17.join('-')
+	数组变字符串，参数为分隔符
+18.keys
+	一个新的 Array 迭代器对象。
+	返回数组的全部索引
+19.lastIndexOf()
+20.map()
+	map() 方法创建一个新数组，这个新数组由原数组中的每个元素都调用一次提供的函数后的返回值组成。新数组由原数组中的每个元素都调用一次提供的函数后的返回值组成。
+21.Array.of()
+22.pop
+23.push
+24.reduce()
+	const array1 = [1, 2, 3, 4];
+
+	// 0 + 1 + 2 + 3 + 4
+	const initialValue = 0;
+	const sumWithInitial = array1.reduce(
+	  (previousValue, currentValue) => previousValue + currentValue,
+	  initialValue
+	);
+	上一次执行的结果和currentValue（当前值）进行运算，initialValue为第一次执行时的previousValue（上次执行结果），
+	因为第一次执行时没有上次执行的结果
+25.reduceRight() 方法接受一个函数作为累加器（accumulator）和数组的每个值（从右到左）将其减少为单个值。
+26.reverse()
+	翻转数组，改变原数组
+27.shift()
+	删除第一个返回，数组为空则返回undefiend
+28.slice()
+	浅拷贝，返回一个新的数组对象
+	arr.slice([begin[, end]]) 从开始索引到结束索引截取数组，返回一个新的数组
+29.some()
+	测试数组中是不是至少有 1 个元素通过了被提供的函数测试。返回的是一个布尔值
+	例子：
+	const func = c=>c%2 == 0
+	arr.some(func)
+	判断这个例子如果有>=1个数组项能被2整除，则返回true,反之为false
+30.sort() 冒泡排序
+	改变原数组，a-b为升序，b-a为降序
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

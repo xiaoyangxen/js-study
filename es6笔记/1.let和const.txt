@@ -1,0 +1,26 @@
+一、let
+1.let声明变量，没有变量提升
+2.是一个块级作用域
+3.不能重复声明
+二、const
+1.const声明变量，没有变量提升
+2.是一个块级作用域
+3.不能重复声明
+4.const声明常量，一旦被声明，无法修改
+5.const可以声明一个对象，不可以直接修改这个对象，但是可以修改对象中的属性
+例子：const person={name：“123”}
+	person.name = "Alex";
+作用1.for循环是一个经典例子
+const arr=[];
+		for(let i = 0;i<10;i++){
+			arr[i] = function(){
+				return i;
+			}
+		}
+		console.log(arr[5]());
+作用2.不会污染全局变量
+let RegExp = 10;
+		console.log(RegExp);
+		console.log(window.RegExp);
+建议：
+	在默认情况下使用const，而只有在你知道变量一定需要改变的时候使用let

@@ -1,0 +1,13 @@
+1.concat（str1,str2,str3...）
+	用于连接两个字符串或多个字符串
+2.substr（start,length）
+	从start（索引）开始，length取的个数
+3.slice（start,end）
+	从start位置开始，到end位置（end取不到）
+4.substring（start,end）
+	基本和slice相同，但是不接受负值
+5.replace('被替换的字符','替换为的字符')
+	只会替换第一个字符
+
+6.split('分隔符')
+	字符转换为数组

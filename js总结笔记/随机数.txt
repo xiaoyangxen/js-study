@@ -1,0 +1,12 @@
+1. 产⽣⼀个[0, 1)的随机⼩数 Math.random() 
+
+2. 产⽣⼀个[0, n)的随机⼩数 Math.random()*n
+
+3. 产⽣⼀个[0, n)的随机整数(向下取整) Math.floor(Math.random()*n)
+
+4. 产⽣⼀个[0, n]的随机整数 Math.floor(Math.random()*(n+1))
+
+5. 产⽣⼀个[m, n]的随机整数Math.floor(Math.random()*(n-m+1)+m)
+
+向下取整Math.floor
+向上取整Math.ceil

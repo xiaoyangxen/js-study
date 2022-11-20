@@ -1,0 +1,41 @@
+display:flex,inline-flex
+
+排列方向：
+flex-direction: row,row-reverse,column(纵向),column-reverse;
+移除换行：
+flex-wrap:wrap
+
+flex-flow:(排列方向) （折行）;包含了上面两个属性
+
+主轴的对齐方式
+justify-content: flex-start ,flex-end,center,space-between(左右靠边)，space-around(不靠边)，space-enenly(元素完全平均分配)
+
+交叉轴对齐方式
+align-content:  stretch(拉伸布满，元素设置的高度或宽度优先级比较高，所以要删除掉元素上的高度或者宽度才可以使用)
+
+对单个元素进行控制
+align-self：flex-start;
+
+例子：设置单个元素拉伸
+height:auto
+align-self：stretch
+
+
+可用空间分配：
+flex-grow: 1;相当于多个元素平均分配
+
+当参数为0时原来多大就是多大，然后其它的元素分配剩余空间
+
+缩小比例：
+flex-shrink：0表示不缩小
+
+基本尺寸:
+flex-basis: 100px；
+
+
+flex:1 2 100px
+表示三个属性
+flex-grow,flex-shrink,flex-basic
+
+改变弹性盒子内元素的位置，在主轴的基础上
+order:值越大，位置距离主轴到的方向越远

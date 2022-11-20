@@ -1,0 +1,20 @@
+es6引入了一种新的原始数据类型symbol,表示独一无二的值，表示类似于字符串的数据类型
+1.symbol值是唯一的，用来解决命名冲突的问题
+2.symbol的值不能与其他数据类型进行运算
+3.symbol定义的对象属性不能使用for...in循环遍历，但是可以使用Reflect.ownKeys来获取对象的所有键名
+
+给对象添加symbol类型属性
+let xxx = {
+  name:'235',
+  [symbol('say')]: function(){
+    console.log('发言')
+  }
+}
+
+
+迭代器
+const xiyou = ['唐僧','孙悟空','猪八戒','沙和尚']
+let iterator = xiyou[Symbol.iterator]();
+调用next方法，返回value和done参数，遍历结束之后done为true,value为undefined
+console.log(iterator.next());
+每次返回的都是一个对象

@@ -1,0 +1,10 @@
+Math.PI //圆周率
+Math.floor() //向下取整
+Math.ceil() //向上取整
+Math.round() //四舍五入 就进去整  -3.5结果是-3  .5往大了取，所以负数往大取
+Math.abs() //绝对值
+Math.max()/min()
+Math.random() [0,1)
+Math.floor(Math.random()*(max-min+1)) + min;
+
+new Date()

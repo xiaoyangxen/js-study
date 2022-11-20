@@ -1,0 +1,24 @@
+1.Object.assign()
+	Object.assign(target, ...sources)
+	target目标对象，sources源对象，将要被合并的属性
+2.Object.create()
+	Object.create(proto)
+	Object.create(proto, propertiesObject)
+	新创建对象的原型对象。
+	new Object()继承内置对象Object，而Object.create()则是继承指定对象
+	可以通过Object.create(null) 创建一个干净的对象，也就是没有原型，而 new Object()创建的对象是 Object的实例，原型永远指向Object.prototype
+例子：
+	const person = {
+	  isHuman: false,
+	  printIntroduction: function() {
+		console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+	  }
+	};
+
+	const me = Object.create(person);
+
+	me.name = 'Matthew'; // "name" is a property set on "me", but not on "person"
+	me.isHuman = true; // inherited properties can be overwritten
+
+	me.printIntroduction();
+	// expected output: "My name is Matthew. Am I human? true"

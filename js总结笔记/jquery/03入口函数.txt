@@ -1,0 +1,10 @@
+1.jQuery两种写法：
+1.1 $(document).ready(function(){});
+1.2 $(function(){});
+
+2.jQuery入口函数和window.onload入口函数的区别。
+a.window.onload入口函数不能写多个，但是jQuery的入口函数可以写多个。
+b.执行时机不同，jQuery入口函数要快于window.onload。
+
+jQuery入口函数要等待页面上dom树加载完后执行。
+window.onload要等待页面上所有的资源（dom树/外部css/js连接，图片）都加载完毕后执行。

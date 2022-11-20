@@ -1,0 +1,18 @@
+1.dom对象
+原生js选择器获取到的对象
+特点：只能调用dom方法或者属性，不能调用jquery的属性或者方法
+
+2.jquery对象
+利用jquery选择器获取到的对象
+特点：只能调用jquery的方法或者属性，不能调用原生js dom对象的属性或者方法
+
+jquery是一个伪数组，jquery对象其实就是dom对象的一个包装集
+
+3.dom对象转化成jquery对象
+$(dom对象)
+
+4.jquery对象转换成dom对象
+	4.1使用下标取出来
+var div1 = $("div")[0]
+	4.2使用jquery的方法get()
+var div2 = $("div").get(0);

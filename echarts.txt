@@ -1,0 +1,31 @@
+yAxis
+axisLine:{show:false}//不显示y轴的线
+axisTick..............	//不显示刻度
+axisLabel：	//刻度标签中颜色
+inverse:true	//数组是否翻转
+splitLine:{lineStyle:{}}	//设置分割线
+
+Series:
+itemStyle:{barBorderRadius:20}	//修改柱子圆角
+				//可以修改柱子颜色
+//每个柱子获取不同颜色
+myColor=[1,2,3,]
+function(params){
+  var num = myColor.length;
+  return myColor[params.dataIndex%num]
+}
+
+
+barCategoryGap:	//柱子间距
+barWidth		//柱子宽度
+
+label:{show:true,position:'inside',formatter:"{c}%"}
+	//显示柱子内的文字
+
+设置两个柱子层叠
+series的对象中分别设置yAxisIndex
+
+
+smooth		//折线是否平滑显示
+
+areaStyle		//填充区域

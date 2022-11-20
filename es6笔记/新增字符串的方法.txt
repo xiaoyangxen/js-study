@@ -1,0 +1,10 @@
+1.String.fromCharCode()
+可以识别大于0xFFFF的字符，用于将unicode码返回对应字符
+例子：
+String.fromCodePoint(0x78, 0x1f680, 0x79) === 'x\uD83D\uDE80y'
+// true
+2.String.raw()
+可以作为处理模板字符串的基本方法，它会将所有变量替换，而且对斜杠进行转义，方便下一步作为字符串来使用
+例子：
+String.raw`Hi\n${2+3}!`
+// 实际返回 "Hi\\n5!"，显示的是转义后的结果 "Hi\n5!"

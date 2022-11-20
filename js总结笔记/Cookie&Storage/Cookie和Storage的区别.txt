@@ -1,0 +1,14 @@
+1.Storage和Cookie的区别：
+与服务器的交换方式不同：
+cookie在浏览器与服务器之间来回传递，每次访问都需要携带cookie。
+sessionStorage和localStorage不会把数据发给服务器,仅在本地保存。
+过期时间不同：
+cookie可以设置过期时间。
+localStorage 没有过期时间，始终有效，长期保存。
+sessionStorage 浏览器关闭后失效，自动销毁。
+存储大小限制不同：
+cookie数据不能超过4k
+storage数据可以达到5M或更大
+易用性不同：
+cookie需要程序员自己封装，原生的操作方式不友好
+storage原生操作方式简单易用

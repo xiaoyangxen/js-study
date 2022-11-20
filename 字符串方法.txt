@@ -1,0 +1,80 @@
+1.charAt(index)
+	返回索引（index）位置的数据
+2.charCodeAt()
+3.codePointAt() 
+4.concat()
+	str.concat()连接字符串
+5.endsWith(searchString[, length])
+	searchString查找的子字符串，length作为str的长度，默认值为 str.length，比如10，则是在str索引为10的位置作为结束，查找之前的结尾是否为子字符串，返回值为布尔值
+6.String.fromCharCode()
+	静态方法，返回UTF-16代码单元序列创建的字符串，可与2,3,配合使用
+7.String.fromCodePoint() 
+	静态方法返回使用指定的代码点序列创建的字符串。
+8.includes()
+	str.includes(searchString[, position])
+	判断一个字符串是否包含在另一个里面，返回布尔值
+9.indexOf()
+10.lastIndexOf()
+11.localeCompare()
+	referenceStr.localeCompare(compareString[, locales[, options]])
+	localeCompare() 方法返回一个数字来指示一个参考字符串是否在排序顺序前面或之后或与给定字符串相同。
+12.match() 
+	str.match(regexp)
+	方法检索返回一个字符串匹配正则表达式的结果，返回一个数组。
+13.matchAll() 
+	方法返回一个包含所有匹配正则表达式的结果及分组捕获组的迭代器。
+14.normalize() 
+	方法会按照指定的一种 Unicode 正规形式将当前字符串正规化。（如果该值不是字符串，则首先将其转换为一个字符串）。
+	str.normalize([form])
+	四种 Unicode 正规形式（Unicode Normalization Form）"NFC"、"NFD"、"NFKC"，或 "NFKD" 其中的一个，默认值为 "NFC"。
+15.padEnd()
+	str.padEnd(targetLength [, padString])
+	会把这个字符串填充为targetLength,以padString填充，如果不设置则默认使用空格添加
+16.padStart()
+	从头开始填充
+	例子：	const fullNumber = '2034399002125581';
+			const last4Digits = fullNumber.slice(-4);
+			const maskedNumber = last4Digits.padStart(fullNumber.length, '*');
+			//************5581
+17.repeat()
+	返回一个新字符串，str.repeat(count),生成一个count次数的str的新字符串
+18.replace()
+	str.replace(regexp|substr, newSubStr|function)
+	返回一个新字符串，替换规则可以是正则表达式，只替换一个
+	例子：	const regex = /Dog/i;
+			console.log(p.replace(regex, 'ferret'));
+19.replaceAll()
+20.search()
+	方法执行正则表达式和 String 对象之间的一个搜索匹配。
+	返回的是查找的正则表达式或者字符串的第一次找到的索引位置
+21.slice()
+	返回一个新字符串，切割
+	str.slice(beginIndex[, endIndex])
+	beginIndex如果为负数，则是从后往前切割
+22.split('分隔符')
+	按分隔符把字符串切割并返回一个新数组
+23.startsWith()
+	str.startsWith(searchString[, position])
+	判断字符串是否以xxx开头，返回布尔值，第二个参数表示从哪个索引位置开始查找
+24.substring()
+	和slice用法一样，都是根据开头索引和结束索引截取一段字符，但是substring开头所以为负数时还是从0开始，不同于slice
+25.toLowerCase()
+	字符串转小写
+26.toUpperCase()
+	转大写
+27.toString() 
+	方法返回指定对象的字符串形式。
+28.trim()
+	两端去空格，并不影响原字符串
+29.trimRight()/trimEnd()
+30.trimStart()/trimLeft()
+31.valueOf() 
+	方法返回 String 对象的原始值
+
+	const stringObj = new String('foo');
+
+	console.log(stringObj);
+	// expected output: String { "foo" }
+
+	console.log(stringObj.valueOf());
+	// expected output: "foo"

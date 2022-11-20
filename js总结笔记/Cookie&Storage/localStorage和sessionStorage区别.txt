@@ -1,0 +1,6 @@
+localStorage和sessionStorage的区别：
+
+1.localStorage的存储是永久性的，只有在手动删除或者浏览器被卸载后才会被清除。
+sessionStorage的存储保存同一窗口或者标签页的数据，当窗口或者页面关闭后会被清除。
+
+2.sessionStorage不能跨页面访问，也不会触发跨标签页的storage事件，而localStorage可以。
